@@ -4,10 +4,11 @@
               auth="Container"
               type="javax.sql.DataSource"
               driverClassName="org.postgresql.Driver"
-              url=" -- jdbc url --"
-              username=" -- user -- "
-              password=" -- password -- "
+              url="jdbc:postgresql://trumpet.db.elephantsql.com:5432/vppbhvzu"
+              username="vppbhvzu"
+              password="jSQW8UyiwBWLu9xSsjYnRzV3NLU3J8Xs"
               maxTotal="1"
               maxIdle="1"
-              maxWaitMillis="-1"/>
+              maxWaitMillis="-1"
+    />
 </Context>
