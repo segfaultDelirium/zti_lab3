@@ -31,4 +31,32 @@ public class ConnJPA {
         }
         return people;
     }
+
+    public void savePerson( Person entity) {
+        //entityTransaction.begin();
+        System.out.println("[ConnJPA] Save entity - " + entity.getLname() );
+        entityTransaction.begin();
+        entityManager.persist(entity);
+        entityManager.flush();
+        entityTransaction.commit();
+    }
+
+    public void updatePerson(Person entity) {
+        entityTransaction.begin();
+        entityManager.merge(entity);
+        entityTransaction.commit();
+    }
+
+    public void deletePerson(Person entity) {
+        System.out.println("Delete entity - " + entity.getLname() + " ID: " + entity.getId().toString());
+        entityTransaction.begin();
+        entityManager.remove(entity);
+        entityManager.flush();
+        entityTransaction.commit();
+    }
+
+    public Person findPerson(int id) {
+        Person entity = (Person) entityManager.find(Person.class, id);
+        return entity;
+    }
 }

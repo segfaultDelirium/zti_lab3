@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+<head>
+    <title>IGNORED</title>
+</head>
+
+<body>
+<ui:composition template="/templates/masterTemplate.xhtml">
+    <ui:define name="content">
+        <div id="content">
+            <h3>#{msg.titleFormView}</h3>
+            <h:form>
+                <h:panelGrid columns="2" frame="hsides" cellspacing="2">
+                    <h:outputLabel for="fname" value="#{msg.Firstname}" />
+                    <h:outputText id="fname"
+                                  value="#{servJPABean.person.fname}" />
+                    <h:outputLabel for="lname" value="#{msg.Lastname}" />
+                    <h:outputText id="lname"
+                                  value="#{servJPABean.person.lname}" />
+                    <h:outputLabel for="city" value="#{msg.City}" />
+                    <h:outputText id="city"
+                                  value="#{servJPABean.person.city}" />
+                    <h:outputLabel for="email" value="#{msg.Email}" />
+                    <h:outputText id="email"
+                                  value="#{servJPABean.person.email}" />
+                    <h:outputLabel for="tel" value="#{msg.Tel}" />
+                    <h:outputText id="tel" value="#{servJPABean.person.tel}" />
+                </h:panelGrid>
+
+            </h:form>
+        </div>
+    </ui:define>
+</ui:composition>
+</body>
+</html>

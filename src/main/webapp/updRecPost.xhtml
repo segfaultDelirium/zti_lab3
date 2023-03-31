@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+<head>
+    <title>IGNORED</title>
+</head>
+
+<body>
+<ui:composition template="/templates/masterTemplate.xhtml">
+
+    <ui:define name="content">
+
+        <div id="content">
+            <h3>#{msg.titleFormUpdate}</h3>
+            <h:form>
+                <h:panelGrid columns="3" frame="hsides" cellspacing="3">
+                    <h:outputLabel for="fname" value="#{msg.Firstname}" />
+                    <h:inputText id="fname"
+                                 value="#{servJPABean.editPerson.fname}" />
+                    <h:outputText value="" />
+                    <h:outputLabel for="lname" value="#{msg.Lastname}" />
+                    <h:inputText id="lname"
+                                 value="#{servJPABean.editPerson.lname}" />
+                    <h:outputText value="" />
+                    <h:outputLabel for="city" value="#{msg.City}" />
+                    <h:inputText id="city"
+                                 value="#{servJPABean.editPerson.city}" />
+                    <h:outputText value="" />
+                    <h:outputLabel for="email" value="#{msg.Email}" />
+                    <h:inputText id="email"
+                                 value="#{servJPABean.editPerson.email}" />
+                    <h:outputText value="" />
+                    <h:outputLabel for="tel" value="#{msg.Tel}" />
+                    <h:inputText id="tel"
+                                 value="#{servJPABean.editPerson.tel}" />
+                    <h:outputText value="" />
+                </h:panelGrid>
+                <h:commandButton value="#{msg.saveLinkFormUpdate}"
+                                 action="#{servJPABean.updatePerson}" id="update" />
+            </h:form>
+        </div>
+    </ui:define>
+</ui:composition>
+</body>
+</html>

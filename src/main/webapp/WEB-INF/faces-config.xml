@@ -16,6 +16,7 @@
             <base-name>data.mess-errors</base-name>
             <var>errors</var>
         </resource-bundle>
+
     </application>
 
 </faces-config>
