@@ -6,6 +6,8 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
+import jakarta.persistence.TypedQuery;
+
 
 import zti.model.Person;
 
@@ -59,4 +61,19 @@ public class ConnJPA {
         Person entity = (Person) entityManager.find(Person.class, id);
         return entity;
     }
+
+    public List<Person> searchPerson(String searchText){
+        List<Person> results = null;
+        try {
+            TypedQuery<Person> query = entityManager.createNamedQuery("searchByLnameOrEmail", Person.class);
+            query.setParameter("lname", searchText);
+            query.setParameter("email", searchText);
+            results = (List<Person>) query.getResultList();
+            // manager.close();
+        } catch (Exception e) {
+            System.out.println("Failed !!! " + e.getMessage());
+        }
+        return results;
+    }
+
 }

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="zti_lab31:war exploded" />
+      <artifact name="zti_lab31:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,21 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6f84e5d-ed38-46cb-9113-1a123666d79f" name="Changes" comment="add files">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/mess-errors.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/addRecPost.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/allRecPost.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/section/main/footer.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/section/main/header.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/section/main/sidebarLeft.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/masterTemplate.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/updRecPost.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/viewCRUD.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/viewRecPost.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zti/zti_lab31/LocaleChanger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/messages_en.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/messages_pl.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/searchBar.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/searchResults.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zti/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zti/model/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/zti/zti_lab31/ConnJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zti/zti_lab31/ConnJPA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/zti/zti_lab31/ServJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zti/zti_lab31/ServJPA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/section/main/header.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/section/main/header.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/section/main/sidebarLeft.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/section/main/sidebarLeft.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/masterTemplate.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/masterTemplate.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,21 +67,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/hyde/0warm_data/studia/mgr/1/zaawansowane_technologie_internetowe/idea_projects_hyde/zti_lab31_try_on_my_own2",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/hyde/0warm_data/studia/mgr/1/zaawansowane_technologie_internetowe/idea_projects_hyde/zti_lab31_try_on_my_own2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
@@ -188,7 +188,9 @@
       <option name="presentableId" value="Default" />
       <updated>1680085755909</updated>
       <workItem from="1680085757342" duration="3542000" />
-      <workItem from="1680283286108" duration="1151000" />
+      <workItem from="1680283286108" duration="6291000" />
+      <workItem from="1680685218335" duration="1795000" />
+      <workItem from="1681896239921" duration="1750000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1680086157746</created>
@@ -197,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680086157746</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add files">
+      <created>1680284711074</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680284711074</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

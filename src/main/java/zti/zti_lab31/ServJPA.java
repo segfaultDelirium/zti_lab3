@@ -1,5 +1,6 @@
 package zti.zti_lab31;
-import java.util.List;
+import java.sql.PreparedStatement;
+import java.util.*;
 
 import jakarta.faces.bean.ManagedBean;
 import jakarta.faces.bean.SessionScoped;
@@ -13,6 +14,9 @@ public class ServJPA {
     private Person person;
     private Person editPerson;
     private Person newPerson;
+
+    private String searchText;
+    private List<Person> searchResults;
     private ConnJPA baza;
 
     public ServJPA() {
@@ -21,6 +25,7 @@ public class ServJPA {
         person = new Person();
         editPerson = new Person();
         newPerson = new Person();
+        searchResults = new ArrayList<>();
     }
 
     public List<Person> getPeople() {
@@ -45,6 +50,10 @@ public class ServJPA {
         return newPerson;
     }
 
+    public List<Person> getSearchResults() {return searchResults;}
+
+    public String getSearchText(){ return searchText;}
+    public void setSearchText(String newValue){this.searchText = newValue;}
     public String selectPerson(Person entity) {
         person = copy(entity);
         return "viewRecPost" ;
@@ -80,6 +89,12 @@ public class ServJPA {
         baza.updatePerson(editPerson);
         editPerson = new Person();
         return "allRecPost";
+    }
+
+    public String searchPerson(){
+        System.out.println("[ServJPA] seach text: " + searchText);
+        this.searchResults = baza.searchPerson(searchText);
+        return "searchResults";
     }
 
 }

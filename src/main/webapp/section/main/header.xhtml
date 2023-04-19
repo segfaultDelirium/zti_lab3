@@ -10,6 +10,15 @@
 
 <body>
 <ui:composition>
+    <div class="header">
+        <h:form>
+            <h:selectOneMenu value="#{localeChanger.language}" onchange="submit()">
+                <f:selectItem itemValue="en" itemLabel="English" />
+                <f:selectItem itemValue="pl" itemLabel="Polish" />
+            </h:selectOneMenu>
+        </h:form>
+
+    </div>
     <!-- div class="header"-->
     <h1>#{msg.headCRUDappl}</h1>
     <!-- /div-->

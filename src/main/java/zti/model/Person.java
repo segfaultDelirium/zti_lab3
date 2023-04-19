@@ -11,6 +11,7 @@ import jakarta.persistence.*;
 @Entity (name="person")
 @Table (name="person", schema="public")
 @NamedQuery(name="findAll", query="SELECT p FROM person p ORDER BY p.lname")
+@NamedQuery(name="searchByLnameOrEmail", query="SELECT p FROM person p WHERE p.lname like CONCAT('%', :lname, '%') OR p.email like CONCAT('%', :email, '%') ")
 public class Person implements Serializable {
     private static final long serialVersionUID = 1L;
     private Integer id;
